@@ -1,0 +1,90 @@
+body{
+    /*background-color: mistyrose;*/
+    background-image: url(f.jpg);
+    background-size: cover;
+}
+div.demo{
+    width:700px;
+    height:110px;
+    position: absolute;
+    top:23%;
+    left:28%;
+    box-sizing: border-box;
+    background-color: rgba(100,200,700,0.4);
+    border-radius: 5px;
+}
+div.demo img{
+    width:90px;
+    height: 90px;
+    left:20px;
+    top:10px;
+    position: absolute;
+    border-radius: 40px;
+}
+div.demo a{
+    top:33px;
+    left:520px;
+    position: absolute;
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 15px;
+    color: black;
+    background-color: tomato;
+    border:none;
+    outline: none;
+    border-radius: 7px;
+    text-decoration: none;
+}
+div.demo p{
+    top:28px;
+    left:130px;
+    font-size: 18px;
+    text-transform: capitalize;
+    position: inherit;
+}
+div.demo input{
+    top:14px;
+    left: 300px;
+    position: relative;
+}
+div.display{
+    width:700px;
+    height:350px;
+    position: absolute;
+    top:39.4%;
+    left:28%;
+    box-sizing: border-box;
+    padding:15px 30px;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 5px;
+    border-radius: 5px;
+}
+
+div.display p{
+    font-size:16px;
+    text-transform: capitalize;
+}
+div.display h1{
+    font-size:21px;
+}
+div.display td{
+    padding: 7px;
+    margin-right: 50px;
+    left:100px;
+    font-size: 15px;
+}
+div.display button{
+    top:280px;
+    left:530px;
+    position: absolute;
+    padding: 12px 22px;
+    text-align: center;
+    font-size: 15px;
+    color: black;
+    background-color: tomato;
+    border:none;
+    outline: none;
+    border-radius: 7px;
+    text-decoration: none;
+}
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="forgot.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="script1.js"></script>
+    </head>
+    <body>
+        <nav>
+                <img src="C.png" alt="logo" class="logo">
+                <ul>
+                    <li><a href="home.html" onmouseover="f30(this)" onmouseout="f40(this)">home</a></li>
+                    <li><a href="signup.html" onmouseover="f30(this)" onmouseout="f40(this)">signup</a></li>
+                    <li><a class="active" href="login1.php" onmouseover="f30(this)" onmouseout="f40(this)">login</a></li>
+                </ul>
+            </nav>
+        <div class="forgot">
+            <img src="lock1.png" alt="avatar" class="avataralgin">
+            <h2>FORGET PASSWORD?</h2>
+            <p>You can reset your password here</p>
+            <form action="forgotpwd.php" method="post">
+                <!--<label>Email Address</label>-->
+                <input type="text" name="emailid" id="emailid" placeholder="Email Address">
+                <button type="submit" onmouseover="curse(this)">Send Mail</button>
+            </form>
+        </div>
+    </body>
+</html>
