@@ -36,16 +36,16 @@ if ($result1->num_rows) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="account.css">
-    <script src="script1.js"></script>
+    <script src="Scripts/Scripts.js"></script>
 </head>
 
 <body>
     <nav>
         <img src="C.png" class="logo" alt="logo">
         <ul>
-            <li><a href="user.php" onmouseover="f30(this)" onmouseout="f40(this)">home</a></li>
-            <li><a href="account.php" onmouseover="f30(this)" onmouseout="f40(this)">account</a></li>
-            <li><a href="logout.php" class="active" onmouseover="f30(this)" onmouseout="f40(this)">LogOut</a></li>
+            <li><a href="user.php" onmouseover="darkRedTextColor(this)" onmouseout="blackTextColor(this)">home</a></li>
+            <li><a href="account.php" onmouseover="darkRedTextColor(this)" onmouseout="blackTextColor(this)">account</a></li>
+            <li><a href="logout.php" class="active" onmouseover="darkRedTextColor(this)" onmouseout="blackTextColor(this)">LogOut</a></li>
         </ul>
     </nav>
 

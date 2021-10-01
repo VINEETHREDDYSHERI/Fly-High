@@ -12,7 +12,7 @@ and open the template in the editor.
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="style.css">
-    <script src="script1.js"></script>
+    <script src="Scripts/Scripts.js"></script>
     <script>
         function vald() {
             var x = document.getElementById("emailid").value;
@@ -33,9 +33,9 @@ and open the template in the editor.
     <nav>
         <img src="C.png" alt="logo" class="logo">
         <ul>
-            <li><a href="home.html" onmouseover="f30(this)" onmouseout="f40(this)">home</a></li>
-            <li><a href="signup.html" onmouseover="f30(this)" onmouseout="f40(this)">signup</a></li>
-            <li><a class="active" href="login1.php" onmouseover="f30(this)" onmouseout="f40(this)">login</a></li>
+            <li><a href="home.html" onmouseover="darkRedTextColor(this)" onmouseout="blackTextColor(this)">home</a></li>
+            <li><a href="signup.html" onmouseover="darkRedTextColor(this)" onmouseout="blackTextColor(this)">signup</a></li>
+            <li><a class="active" href="login1.php" onmouseover="darkRedTextColor(this)" onmouseout="blackTextColor(this)">login</a></li>
         </ul>
     </nav>
     <div class="formalgin">
@@ -43,11 +43,11 @@ and open the template in the editor.
         <h1>LOGIN FORM</h1>
         <form action='login.php' method='post'>
             <p>USERNAME:</p>
-            <input type="text" id="emailid" name="emailid" placeholder="Enter the EmailId" onmouseover="f2(this)" required>
+            <input type="text" id="emailid" name="emailid" placeholder="Enter the EmailId" required>
             <p>PASSWORD:</p>
             <input type="password" id="pwd" name="pwd" placeholder="Enter the password" required>
             <p style="font-size: 15px;"><input type="checkbox" name="remember[]" id="re" value="remember" style="height: 10px;margin-top:10px;" checked> Remember</p>
-            <button type="submit" onmouseover="curse(this)">LOGIN</button>
+            <button type="submit" onmouseover="pointerCursor(this)">LOGIN</button>
             <a href="forgotpwd.html" class="link">Forgot the Password??</a><br>
             <a href='signup.html' class="link">Click here to Register</a>
         </form>

@@ -6,14 +6,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script1.js"></script>
+    <script src="Scripts/Scripts.js"></script>
     <script>
-        function f1() {
+        function setSingleTrip() {
             document.getElementById("demo").style.visibility = "hidden";
             document.getElementById("return").style.visibility = "hidden";
         }
 
-        function f2() {
+        function setRoundTrip() {
             document.getElementById("demo").style.visibility = "visible";
             document.getElementById("return").style.visibility = "visible";
         }
@@ -26,10 +26,10 @@
     <nav>
         <img src="C.png" class="logo" alt="logo">
         <ul>
-            <li><a href="user.php" onmouseover="f30(this)" onmouseout="f40(this)">home</a></li>
-            <li><a href="#about" onmouseover="f30(this)" onmouseout="f40(this)">about</a></li>
-            <li><a href="account.php" onmouseover="f30(this)" onmouseout="f40(this)">account</a></li>
-            <li><a href="logout.php" class="active" onmouseover="f30(this)" onmouseout="f40(this)">LogOut</a></li>
+            <li><a href="user.php" onmouseover="darkRedTextColor(this)" onmouseout="blackTextColor(this)">home</a></li>
+            <li><a href="#about" onmouseover="darkRedTextColor(this)" onmouseout="blackTextColor(this)">about</a></li>
+            <li><a href="account.php" onmouseover="darkRedTextColor(this)" onmouseout="blackTextColor(this)">account</a></li>
+            <li><a href="logout.php" class="active" onmouseover="darkRedTextColor(this)" onmouseout="blackTextColor(this)">LogOut</a></li>
         </ul>
         <p id="user" class="user">Welcome User</p>
     </nav>
@@ -37,15 +37,15 @@
         <div class="wrapper">
             <p>Discover the Best Flights Deals Available</p>
             <form action="flights.php" method="post">
-                <input type="radio" name="trip" value="round" onclick="f2()" checked>Round
-                <input type="radio" name="trip" value="single" onchange="f1()">Single<br>
+                <input type="radio" name="trip" value="round" onclick="setRoundTrip()" checked>Round
+                <input type="radio" name="trip" value="single" onchange="setSingleTrip()">Single<br>
                 <input type="text" name="from" placeholder="From:City Name" required>
                 <input type="text" name="to" placeholder="To:City Name" required>
                 <p>Depart Date</p>
                 <input type="date" name="depart" required>
                 <p id="demo">Return date</p>
                 <input type="date" name="return" id="return">
-                <button type="submit" onmouseover="curse(this)">search</button>
+                <button type="submit" onmouseover="pointerCursor(this)">search</button>
             </form>
         </div>
     </section>

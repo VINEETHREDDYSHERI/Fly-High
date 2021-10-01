@@ -72,9 +72,9 @@ and open the template in the editor.
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="flights.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script1.js"></script>
+    <script src="Scripts/Scripts.js"></script>
     <script>
-        function f88() {
+        function onSubmitGetVal() {
             var as = document.getElementById("single").value;
         }
     </script>
@@ -84,14 +84,14 @@ and open the template in the editor.
     <nav>
         <img src="C.png" class="logo" alt="logo">
         <ul>
-            <li><a href="user.php" onmouseover="f30(this)" onmouseout="f40(this)">home</a></li>
-            <li><a href="account.php" onmouseover="f30(this)" onmouseout="f40(this)">Account</a></li>
-            <li><a href="logout.php" class="active" onmouseover="f30(this)" onmouseout="f40(this)">LogOut</a></li>
+            <li><a href="user.php" onmouseover="darkRedTextColor(this)" onmouseout="blackTextColor(this)">home</a></li>
+            <li><a href="account.php" onmouseover="darkRedTextColor(this)" onmouseout="blackTextColor(this)">Account</a></li>
+            <li><a href="logout.php" class="active" onmouseover="darkRedTextColor(this)" onmouseout="blackTextColor(this)">LogOut</a></li>
         </ul>
         <p id="user" class="user">Welcome User</p>
     </nav>
-    <form action="book.php" method="post" onsubmit="return f88()">
-        <button type="submit" onmouseover="curse(this)">Book Now</button>
+    <form action="book.php" method="post" onsubmit="return onSubmitGetVal()">
+        <button type="submit" onmouseover="pointerCursor(this)">Book Now</button>
     </form>
 </body>
 

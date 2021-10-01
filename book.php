@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="book.css">
-    <script src="script1.js"></script>
+    <script src="Scripts/Scripts.js"></script>
 </head>
 
 <body>
     <nav>
         <img src="C.png" class="logo" alt="logo">
         <ul>
-            <li><a href="user.php" onmouseover="f30(this)" onmouseout="f40(this)">home</a></li>
-            <li><a href="account.php" onmouseover="f30(this)" onmouseout="f40(this)">Account</a></li>
-            <li><a href="logout.php" class="active" onmouseover="f30(this)" onmouseout="f40(this)">LogOut</a></li>
+            <li><a href="user.php" onmouseover="darkRedTextColor(this)" onmouseout="blackTextColor(this)">home</a></li>
+            <li><a href="account.php" onmouseover="darkRedTextColor(this)" onmouseout="blackTextColor(this)">Account</a></li>
+            <li><a href="logout.php" class="active" onmouseover="darkRedTextColor(this)" onmouseout="blackTextColor(this)">LogOut</a></li>
         </ul>
         <p id="user" class="user">Welcome User</p>
     </nav>
@@ -43,7 +43,7 @@
                     <p id="cost"></p>
                 </tr>
             </table>
-            <button type="submit" onmouseover="curse(this)">PAY NOW</button>
+            <button type="submit" onmouseover="pointerCursor(this)">PAY NOW</button>
         </form>
     </div>
 </body>

@@ -13,11 +13,11 @@ and open the template in the editor.
     <link rel="stylesheet" href="admin.css">
     <link rel="stylesheet" href="style.css">
     <script>
-        function f3(obj) {
+        function darkRedTextColor(obj) {
             obj.style.color = "darkred";
         }
 
-        function f4(obj) {
+        function blackTextColor(obj) {
             obj.style.color = "black";
         }
     </script>
@@ -27,9 +27,9 @@ and open the template in the editor.
     <nav>
         <img src="C.png" class="logo" alt="logo">
         <ul>
-            <li><a href="#" onmouseover="f3(this)" onmouseout="f4(this)">home</a></li>
-            <li><a href="admin.php" onmouseover="f3(this)" onmouseout="f4(this)">Flight Update</a></li>
-            <li><a href="logout.php" onmouseover="f3(this)" onmouseout="f4(this)">LogOut</a></li>
+            <li><a href="#" onmouseover="darkRedTextColor(this)" onmouseout="blackTextColor(this)">home</a></li>
+            <li><a href="admin.php" onmouseover="darkRedTextColor(this)" onmouseout="blackTextColor(this)">Flight Update</a></li>
+            <li><a href="logout.php" onmouseover="darkRedTextColor(this)" onmouseout="blackTextColor(this)">LogOut</a></li>
         </ul>
     </nav>
     <div class="display">

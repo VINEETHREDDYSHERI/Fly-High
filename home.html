@@ -11,7 +11,7 @@ and open the template in the editor.
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="Styles/style.css">
-    <script src="script1.js"></script>
+    <script src="Scripts/Scripts.js"></script>
     <script>
         function f1() {
             document.getElementById("demo").style.visibility = "hidden";
@@ -39,10 +39,10 @@ and open the template in the editor.
     <nav>
         <img src="Images/Logo.png" class="logo" alt="logo">
         <ul>
-            <li><a href="home.html" onmouseover="f30(this)" onmouseout="f40(this)">home</a></li>
-            <li><a href="#about" onmouseover="f30(this)" onmouseout="f40(this)">about</a></li>
-            <li><a href="signup.html" onmouseover="f30(this)" onmouseout="f40(this)">signup</a></li>
-            <li><a class="active" href="login1.php" onmouseover="f30(this)" onmouseout="f40(this)">login</a></li>
+            <li><a href="home.html" onmouseover="darkRedTextColor(this)" onmouseout="blackTextColor(this)">home</a></li>
+            <li><a href="#about" onmouseover="darkRedTextColor(this)" onmouseout="blackTextColor(this)">about</a></li>
+            <li><a href="signup.html" onmouseover="darkRedTextColor(this)" onmouseout="blackTextColor(this)">signup</a></li>
+            <li><a class="active" href="login1.php" onmouseover="darkRedTextColor(this)" onmouseout="blackTextColor(this)">login</a></li>
         </ul>
     </nav>
     <section class="slide">
@@ -57,7 +57,7 @@ and open the template in the editor.
                 <input type="date" name="depart" required>
                 <p id="demo">Return date</p>
                 <input type="date" name="return" id="return">
-                <button type="submit" onmouseover="curse(this)">search</button>
+                <button type="submit" onmouseover="pointerCursor(this)">search</button>
             </form>
         </div>
     </section>

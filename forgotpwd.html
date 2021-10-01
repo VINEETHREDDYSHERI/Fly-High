@@ -12,16 +12,16 @@ and open the template in the editor.
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles/forgot.css">
     <link rel="stylesheet" href="Styles/style.css">
-    <script src="script1.js"></script>
+    <script src="Scripts/Scripts.js"></script>
 </head>
 
 <body>
     <nav>
         <img src="Images/Logo.png" alt="logo" class="logo">
         <ul>
-            <li><a href="home.html" onmouseover="f30(this)" onmouseout="f40(this)">home</a></li>
-            <li><a href="signup.html" onmouseover="f30(this)" onmouseout="f40(this)">signup</a></li>
-            <li><a class="active" href="login1.php" onmouseover="f30(this)" onmouseout="f40(this)">login</a></li>
+            <li><a href="home.html" onmouseover="darkRedTextColor(this)" onmouseout="blackTextColor(this)">home</a></li>
+            <li><a href="signup.html" onmouseover="darkRedTextColor(this)" onmouseout="blackTextColor(this)">signup</a></li>
+            <li><a class="active" href="login1.php" onmouseover="darkRedTextColor(this)" onmouseout="blackTextColor(this)">login</a></li>
         </ul>
     </nav>
     <div class="forgot">
@@ -31,7 +31,7 @@ and open the template in the editor.
         <form action="forgotpwd.php" method="post">
             <!--<label>Email Address</label>-->
             <input type="text" name="emailid" id="emailid" placeholder="Email Address">
-            <button type="submit" onmouseover="curse(this)">Send Mail</button>
+            <button type="submit" onmouseover="pointerCursor(this)">Send Mail</button>
         </form>
     </div>
 </body>
