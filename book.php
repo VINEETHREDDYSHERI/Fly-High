@@ -1,22 +1,24 @@
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="stylesheet" type="text/css" href="book.css">
-        <script src="script1.js"></script>
-    </head>
-    <body>
-        <nav>
-            <img src="C.png" class="logo" alt="logo">
-            <ul>
-                <li><a href="user.php" onmouseover="f30(this)" onmouseout="f40(this)">home</a></li>
-                <li><a href="account.php" onmouseover="f30(this)" onmouseout="f40(this)">Account</a></li>
-                <li><a href="logout.php" class="active" onmouseover="f30(this)" onmouseout="f40(this)">LogOut</a></li>
-            </ul>
-            <p id="user" class="user">Welcome User</p>
-         </nav>
-        <div class="dem">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="book.css">
+    <script src="script1.js"></script>
+</head>
+
+<body>
+    <nav>
+        <img src="C.png" class="logo" alt="logo">
+        <ul>
+            <li><a href="user.php" onmouseover="f30(this)" onmouseout="f40(this)">home</a></li>
+            <li><a href="account.php" onmouseover="f30(this)" onmouseout="f40(this)">Account</a></li>
+            <li><a href="logout.php" class="active" onmouseover="f30(this)" onmouseout="f40(this)">LogOut</a></li>
+        </ul>
+        <p id="user" class="user">Welcome User</p>
+    </nav>
+    <div class="dem">
         <form action="sucess.html" method="post">
             <p>Pay with Credit Card</p>
             <table>
@@ -37,32 +39,32 @@
                     <td><input type='year' name='y'></td>
                     <td><input type='text' name='cvv'></td>
                 </tr>
-                <tr><p id="cost"></p></tr>
+                <tr>
+                    <p id="cost"></p>
+                </tr>
             </table>
             <button type="submit" onmouseover="curse(this)">PAY NOW</button>
         </form>
-        </div>
-    </body>
+    </div>
+</body>
+
 </html>
 
 <?php
-    session_start();
-    $x=$_SESSION["single"];
-    $y=$_SESSION["round"];
-    echo '321'.$x;
-    $conn=  mysqli_connect("localhost","root","sankeeth72", "test");
-    if(!$conn)
-    {
-        die("connection failed".mysqli_connect_errno());
-    }
-    $query="select * from test.flights where flightno='".$x."'";
-    $result=  mysqli_query($conn, $query);
-    if(!$query)
-    {
-       die("connection failed".mysqli_error($conn));
-    }
-    $row=$result->fetch_assoc();
-    $fare=$row["fare"];
-    $seat=$row["seats"];
-    echo ''.$fare."".$seat;
-
+session_start();
+$x = $_SESSION["single"];
+$y = $_SESSION["round"];
+echo '321' . $x;
+$conn =  mysqli_connect("localhost", "root", "sankeeth72", "test");
+if (!$conn) {
+    die("connection failed" . mysqli_connect_errno());
+}
+$query = "select * from test.flights where flightno='" . $x . "'";
+$result =  mysqli_query($conn, $query);
+if (!$query) {
+    die("connection failed" . mysqli_error($conn));
+}
+$row = $result->fetch_assoc();
+$fare = $row["fare"];
+$seat = $row["seats"];
+echo '' . $fare . "" . $seat;

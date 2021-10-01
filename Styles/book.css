@@ -1,30 +1,35 @@
-body{
-    background-image: url('a1.jpg');
+body {
+    background-image: url('../Images/BackgroundImg10.jpg');
     background-size: cover;
 }
-.dem{
+
+.dem {
     position: absolute;
-    left:30%;
-    top:200px;
-    padding:20px;
+    left: 30%;
+    top: 200px;
+    padding: 20px;
     text-align: center;
     box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.5);
     transition: .5s ease;
 }
-.dem:hover{
-    box-shadow: 0px 0px 40px 16px rgba(18,18,18,.3);
+
+.dem:hover {
+    box-shadow: 0px 0px 40px 16px rgba(18, 18, 18, .3);
 }
-.dem input{
-    width:150px;
+
+.dem input {
+    width: 150px;
 }
-.dem button{
-    padding:10px 20px;
+
+.dem button {
+    padding: 10px 20px;
     transform: translateY(13px) translateX(150px);
     background-color: tomato;
-    border:none;
+    border: none;
     outline: none;
     border-radius: 7px;
 }
-.dem button:hover{
+
+.dem button:hover {
     background-color: salmon;
 }
